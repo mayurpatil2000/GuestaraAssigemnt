@@ -1,0 +1,26 @@
+<b class="screen-overlay"></b>
+      <!-- offcanvas panel -->
+      <aside>
+            <div class="side-nav-cat">
+               <div class="nav-cat-side">
+               <h2>Display Category</h2>
+               <ul>
+                  <%allcat.forEach((y)=>{%>
+                     <li><a href="/course/<%=y.categoryUrl%>/"><%=y.category%></a></li>
+                  <%})%>               
+               </ul>
+           </div>
+
+           <div class="nav-cat-side">
+               <h2>Display Iteam</h2>
+               <ul>
+                  <%allcourses.forEach((y)=>{%>
+                     <li><a href="/course/<%=y.productCat%>/<%=y.productUrl%>"><%=y.productTitle%></a></li>
+                  <%})%>               
+               </ul>
+            </div>
+         </div>
+         
+        
+      </aside>
+      <!-- offcanvas panel .end -->
